@@ -39,6 +39,7 @@ class ViewController: UIViewController {
         } else {
             let interestsViewController = self.storyboard?.instantiateViewController(withIdentifier: "CollectionViewControllerID") as! CollectionViewController
             
+            
             interestsViewController.name = nameTextField.text
             interestsViewController.age = Int(ageTextField.text!)
             
