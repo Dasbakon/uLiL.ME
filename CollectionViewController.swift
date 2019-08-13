@@ -12,11 +12,14 @@ private let reuseIdentifier = "Cell"
 
 class CollectionViewController: UICollectionViewController {
     
+    var name: String?
+    var age: Int?
+    
     var interestsArray = ["Esportes", "Filmes", "Jogos", "Séries", "Animes", "Manga", "Culinária", "Computação", "Pedagogia", "Ciencia", "Terror", "Economia", "Política", "YouTube"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -24,6 +27,14 @@ class CollectionViewController: UICollectionViewController {
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        let alertController = UIAlertController(title: "Bem-vindo, \(name)", message: "Oi", preferredStyle: UIAlertControllerStyle.alert)
+        alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alertController, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

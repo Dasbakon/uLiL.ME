@@ -53,6 +53,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="enterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="66a-jz-cJl"/>
                                     <segue destination="qcB-eV-dLL" kind="show" id="UDK-fx-wih"/>
                                 </connections>
                             </button>
@@ -76,6 +77,10 @@
                             <constraint firstItem="O3V-JJ-Xoy" firstAttribute="top" secondItem="RvC-es-Ahu" secondAttribute="bottom" constant="30" id="yXa-D0-SHd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ageTextField" destination="O3V-JJ-Xoy" id="blK-0B-jr1"/>
+                        <outlet property="nameTextField" destination="RvC-es-Ahu" id="QBe-Wv-3g4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -83,8 +88,8 @@
         <!--Collection View Controller-->
         <scene sceneID="eSp-C9-cTF">
             <objects>
-                <collectionViewController id="qcB-eV-dLL" customClass="CollectionViewController" customModule="uLiL_ME" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" dataMode="prototypes" id="5JI-aB-mGj">
+                <collectionViewController storyboardIdentifier="CollectionViewControllerID" id="qcB-eV-dLL" customClass="CollectionViewController" customModule="uLiL_ME" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" dataMode="prototypes" id="5JI-aB-mGj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

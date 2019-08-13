@@ -317,6 +317,7 @@
 				3FAB950322FCD5C900303EED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
