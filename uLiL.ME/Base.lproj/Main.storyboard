@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1710" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1710" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="x2H-sB-fsw">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -131,22 +131,112 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x4L-Lu-2Lf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1062" y="36"/>
+            <point key="canvasLocation" x="1038" y="70"/>
         </scene>
-        <!--Novas Pessoas Table View Controller-->
-        <scene sceneID="WHp-Lr-Pr1">
+        <!--Conversas-->
+        <scene sceneID="tcQ-t5-eS5">
             <objects>
-                <tableViewController id="zaO-xa-RVO" customClass="novasPessoasTableViewController" customModule="uLiL_ME" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="77" sectionHeaderHeight="28" sectionFooterHeight="28" id="52C-St-aUg">
+                <tableViewController id="aLS-yc-0Rb" customClass="pessoasTableViewController" customModule="uLiL_ME" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="76" sectionHeaderHeight="28" sectionFooterHeight="28" id="ne6-hU-aGT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="novaPessoaTableViewCell" rowHeight="77" id="OvS-6a-BqK" customClass="novaPessoaTableViewCell" customModule="uLiL_ME" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="77"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="pessoaCell" rowHeight="76" id="YZS-4m-B1b" customClass="pessoaTableViewCell" customModule="uLiL_ME" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="76"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YZS-4m-B1b" id="ATy-6D-pME">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="75.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8YR-6r-xl1">
+                                            <rect key="frame" x="5" y="5" width="66" height="66"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="66" id="Fa1-LD-JBT"/>
+                                                <constraint firstAttribute="height" constant="66" id="suG-y4-dcz"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="biG-SC-SLe">
+                                            <rect key="frame" x="79" y="8" width="275" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="25" id="gD2-wo-oTa"/>
+                                                <constraint firstAttribute="width" constant="275" id="jia-AK-CWX"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWT-Fb-u77">
+                                            <rect key="frame" x="79" y="37" width="275" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="25" id="5iA-ru-Dvk"/>
+                                                <constraint firstAttribute="width" constant="275" id="bSg-mU-8VV"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="8YR-6r-xl1" firstAttribute="leading" secondItem="ATy-6D-pME" secondAttribute="leading" constant="5" id="8z2-Ak-Nk1"/>
+                                        <constraint firstItem="8YR-6r-xl1" firstAttribute="top" secondItem="ATy-6D-pME" secondAttribute="top" constant="5" id="Fx0-PV-9d4"/>
+                                        <constraint firstItem="biG-SC-SLe" firstAttribute="leading" secondItem="8YR-6r-xl1" secondAttribute="trailing" constant="8" id="LCa-fh-xfP"/>
+                                        <constraint firstItem="XWT-Fb-u77" firstAttribute="top" secondItem="biG-SC-SLe" secondAttribute="bottom" constant="4" id="SYV-Ul-8rO"/>
+                                        <constraint firstItem="XWT-Fb-u77" firstAttribute="leading" secondItem="8YR-6r-xl1" secondAttribute="trailing" constant="8" id="Zp7-Hh-4fy"/>
+                                        <constraint firstItem="biG-SC-SLe" firstAttribute="top" secondItem="ATy-6D-pME" secondAttribute="topMargin" id="wSy-nD-HMu"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="fotoPessoaImgView" destination="8YR-6r-xl1" id="Zck-Tz-xmT"/>
+                                    <outlet property="msgPessoaLabel" destination="XWT-Fb-u77" id="Jpw-Ua-NaI"/>
+                                    <outlet property="nomePessoaLabel" destination="biG-SC-SLe" id="01E-ML-X3o"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="aLS-yc-0Rb" id="y4w-ML-VEW"/>
+                            <outlet property="delegate" destination="aLS-yc-0Rb" id="Gus-jx-sao"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Conversas" image="conversasIcon" selectedImage="conversasIcon" id="oYf-E1-TBl"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mSP-m2-Ige" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2932" y="69.715142428785612"/>
+        </scene>
+        <!--Perfil-->
+        <scene sceneID="GFB-IJ-RRX">
+            <objects>
+                <viewController id="gPK-gs-3QS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b4q-na-SdJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="FXo-ZD-uGe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9gi-DT-Qlv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Perfil" image="perfilIcon" selectedImage="perfilIcon" id="o7K-M3-tKY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="km4-Ff-bci" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2932" y="871.21439280359823"/>
+        </scene>
+        <!--Novas Pessoas-->
+        <scene sceneID="WHp-Lr-Pr1">
+            <objects>
+                <tableViewController id="zaO-xa-RVO" customClass="novasPessoasTableViewController" customModule="uLiL_ME" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="76" sectionHeaderHeight="28" sectionFooterHeight="28" id="52C-St-aUg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="novaPessoaTableViewCell" rowHeight="76" id="OvS-6a-BqK" customClass="novaPessoaTableViewCell" customModule="uLiL_ME" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="76"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OvS-6a-BqK" id="tcK-9g-grm">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="76.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="75.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="knw-vt-tll">
@@ -198,10 +288,35 @@
                             <outlet property="delegate" destination="zaO-xa-RVO" id="puv-e8-F6U"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Novas Pessoas" image="novasPessoasIcon" selectedImage="novasPessoasIcon" id="3pz-ut-rfI"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R6T-5g-Sff" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1914" y="37"/>
+            <point key="canvasLocation" x="2932" y="-694.00299850074964"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="oMS-Cl-Pai">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="x2H-sB-fsw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" itemPositioning="fill" id="W9h-5L-K4j">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="gPK-gs-3QS" kind="relationship" relationship="viewControllers" id="c2e-Xx-kfR"/>
+                        <segue destination="aLS-yc-0Rb" kind="relationship" relationship="viewControllers" id="5Ml-5u-7af"/>
+                        <segue destination="zaO-xa-RVO" kind="relationship" relationship="viewControllers" id="Reh-Ue-OFz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TjJ-vZ-WpI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1992.8" y="88.605697151424295"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="conversasIcon" width="30" height="30"/>
+        <image name="novasPessoasIcon" width="30" height="30"/>
+        <image name="perfilIcon" width="30" height="30"/>
+    </resources>
 </document>
