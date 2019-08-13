@@ -12,6 +12,9 @@ private let reuseIdentifier = "Cell"
 
 class CollectionViewController: UICollectionViewController {
     
+    var name: String?
+    var age: Int?
+    
     var interestsArray = ["Esportes", "Filmes", "Jogos", "Séries", "Animes", "Manga", "Culinária", "Computação", "Pedagogia", "Ciencia", "Terror", "Economia", "Política", "YouTube"]
     
     override func viewDidLoad() {
