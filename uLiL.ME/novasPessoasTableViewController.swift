@@ -22,6 +22,16 @@ class novasPessoasTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "tableViewParaPerfil"{
+            let destinoVC = segue.destination as! PerfilViewController
+            destinoVC.novaPessoa = sender as? NovaPessoa
+            
+            
+        }
+        
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -54,6 +64,11 @@ class novasPessoasTableViewController: UITableViewController {
             return novasPessoasCell
         }
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let pessoa = novasPessoas[indexPath.row]
+        performSegue(withIdentifier: "tableViewParaPerfil", sender: pessoa)
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
