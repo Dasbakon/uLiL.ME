@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F51BF5923038D3B003C48B3 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F51BF5823038D3B003C48B3 /* PerfilViewController.swift */; };
 		3F8A8598230224F300531419 /* novaPessoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A8597230224F300531419 /* novaPessoa.swift */; };
 		3F8A859A2302251100531419 /* novaPessoaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A85992302251100531419 /* novaPessoaTableViewCell.swift */; };
 		3F8A859C2302254D00531419 /* novasPessoasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A859B2302254D00531419 /* novasPessoasTableViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F51BF5823038D3B003C48B3 /* PerfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
 		3F8A8597230224F300531419 /* novaPessoa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = novaPessoa.swift; sourceTree = "<group>"; };
 		3F8A85992302251100531419 /* novaPessoaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = novaPessoaTableViewCell.swift; sourceTree = "<group>"; };
 		3F8A859B2302254D00531419 /* novasPessoasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = novasPessoasTableViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				3F8A859B2302254D00531419 /* novasPessoasTableViewController.swift */,
 				3F8A859F23023A2100531419 /* pessoasTableViewController.swift */,
 				3F8A85A123023A3500531419 /* pessoaTableViewCell.swift */,
+				3F51BF5823038D3B003C48B3 /* PerfilViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				TargetAttributes = {
 					3FAB94EB22FCD5C900303EED = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 84MYXA578R;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -190,6 +194,7 @@
 				3F8A859A2302251100531419 /* novaPessoaTableViewCell.swift in Sources */,
 				3FAB94F822FCD5C900303EED /* uLiL_ME.xcdatamodeld in Sources */,
 				3FAB94F222FCD5C900303EED /* ViewController.swift in Sources */,
+				3F51BF5923038D3B003C48B3 /* PerfilViewController.swift in Sources */,
 				3F8A85A223023A3500531419 /* pessoaTableViewCell.swift in Sources */,
 				3F8A859C2302254D00531419 /* novasPessoasTableViewController.swift in Sources */,
 				3FAB94F022FCD5C900303EED /* AppDelegate.swift in Sources */,
@@ -318,10 +323,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 84MYXA578R;
 				INFOPLIST_FILE = uLiL.ME/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hackatruck.uLiL-ME";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uLiL-ME";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -330,10 +339,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 84MYXA578R;
 				INFOPLIST_FILE = uLiL.ME/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hackatruck.uLiL-ME";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uLiL-ME";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
