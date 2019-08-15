@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F40E8632304E0AF00543670 /* perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40E8622304E0AF00543670 /* perfil.swift */; };
-		3F40E8652304E3A000543670 /* PerfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40E8642304E3A000543670 /* PerfilView.swift */; };
 		3F51BF5923038D3B003C48B3 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F51BF5823038D3B003C48B3 /* PerfilViewController.swift */; };
 		3F6222C52304CBB400CD311E /* LibreCaslonDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F6222C42304CBB400CD311E /* LibreCaslonDisplay-Regular.ttf */; };
 		3F6222CB2304CE4D00CD311E /* IndieFlower-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F6222C62304CE4D00CD311E /* IndieFlower-Regular.ttf */; };
@@ -32,8 +30,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3F40E8622304E0AF00543670 /* perfil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = perfil.swift; sourceTree = "<group>"; };
-		3F40E8642304E3A000543670 /* PerfilView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfilView.swift; sourceTree = "<group>"; };
 		3F51BF5823038D3B003C48B3 /* PerfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
 		3F6222C42304CBB400CD311E /* LibreCaslonDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "LibreCaslonDisplay-Regular.ttf"; path = "../../../Libre_Caslon_Display/LibreCaslonDisplay-Regular.ttf"; sourceTree = "<group>"; };
 		3F6222C62304CE4D00CD311E /* IndieFlower-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "IndieFlower-Regular.ttf"; path = "../../../fonts/Indie_Flower/IndieFlower-Regular.ttf"; sourceTree = "<group>"; };
@@ -79,7 +75,6 @@
 				3F8A859F23023A2100531419 /* pessoasTableViewController.swift */,
 				3F8A85A123023A3500531419 /* pessoaTableViewCell.swift */,
 				3F51BF5823038D3B003C48B3 /* PerfilViewController.swift */,
-				3F40E8642304E3A000543670 /* PerfilView.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -89,7 +84,6 @@
 			children = (
 				3F8A8597230224F300531419 /* novaPessoa.swift */,
 				3F8A859D2302391600531419 /* pessoa.swift */,
-				3F40E8622304E0AF00543670 /* perfil.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -221,9 +215,7 @@
 				3F8A8598230224F300531419 /* novaPessoa.swift in Sources */,
 				3FAB950922FCE0AF00303EED /* CollectionViewController.swift in Sources */,
 				3F8A859E2302391600531419 /* pessoa.swift in Sources */,
-				3F40E8652304E3A000543670 /* PerfilView.swift in Sources */,
 				3F8A859A2302251100531419 /* novaPessoaTableViewCell.swift in Sources */,
-				3F40E8632304E0AF00543670 /* perfil.swift in Sources */,
 				3FAB94F822FCD5C900303EED /* uLiL_ME.xcdatamodeld in Sources */,
 				3FAB94F222FCD5C900303EED /* ViewController.swift in Sources */,
 				3F51BF5923038D3B003C48B3 /* PerfilViewController.swift in Sources */,
