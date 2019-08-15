@@ -8,13 +8,19 @@
 
 import UIKit
 
+var novoperfil:Perfil?
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var ageTextField: UITextField!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -39,12 +45,11 @@ class ViewController: UIViewController {
         } else {
             let interestsViewController = self.storyboard?.instantiateViewController(withIdentifier: "CollectionViewControllerID") as! CollectionViewController
 
-            interestsViewController.name = String(nameTextField.text!)
-            interestsViewController.age = Int(ageTextField.text!)
+            novoperfil = Perfil.init(name: nameTextField.text!, age: Int(ageTextField.text!)!)
             
+            interestsViewController.name = novoperfil?.name
+            interestsViewController.age = novoperfil?.age
         }
-        
     }
-
 }
 
