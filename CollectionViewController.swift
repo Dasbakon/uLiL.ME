@@ -20,19 +20,19 @@ class CollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
+        // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         
-        let alertController = UIAlertController(title: "Bem-vindo, \((novoperfil?.name)!)", message: "Oi", preferredStyle: UIAlertControllerStyle.alert)
+        let alertController = UIAlertController(title: "Bem-vindo, \(name)", message: "Oi", preferredStyle: UIAlertControllerStyle.alert)
         alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
         self.present(alertController, animated: true, completion: nil)
     }
@@ -66,6 +66,7 @@ class CollectionViewController: UICollectionViewController {
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
+
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
@@ -133,6 +134,8 @@ class CollectionViewController: UICollectionViewController {
         self.interestsArray.remove(at: indexPath.row)
         self.collectionView?.deleteItems(at: [indexPath])
        
+        
+        
         
     }
  
