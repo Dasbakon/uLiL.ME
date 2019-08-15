@@ -32,6 +32,7 @@ class PerfilViewController: UIViewController {
         
         nomeIdadeLabel.text = (novaPessoa?.nome)! + ", " + (novaPessoa?.idade)!
         fotoPerfil.image = UIImage(named: (novaPessoa?.nomeDaFoto)!)
+        detalhesPerfilLabel.text = novaPessoa?.detalhes
         
     }
     

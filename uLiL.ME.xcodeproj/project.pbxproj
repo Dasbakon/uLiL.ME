@@ -10,6 +10,12 @@
 		3F40E8632304E0AF00543670 /* perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40E8622304E0AF00543670 /* perfil.swift */; };
 		3F40E8652304E3A000543670 /* PerfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40E8642304E3A000543670 /* PerfilView.swift */; };
 		3F51BF5923038D3B003C48B3 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F51BF5823038D3B003C48B3 /* PerfilViewController.swift */; };
+		3F6222C52304CBB400CD311E /* LibreCaslonDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F6222C42304CBB400CD311E /* LibreCaslonDisplay-Regular.ttf */; };
+		3F6222CB2304CE4D00CD311E /* IndieFlower-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F6222C62304CE4D00CD311E /* IndieFlower-Regular.ttf */; };
+		3F6222CC2304CE4D00CD311E /* Lobster-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F6222C72304CE4D00CD311E /* Lobster-Regular.ttf */; };
+		3F6222CD2304CE4D00CD311E /* Satisfy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F6222C82304CE4D00CD311E /* Satisfy-Regular.ttf */; };
+		3F6222CE2304CE4D00CD311E /* Anton-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F6222C92304CE4D00CD311E /* Anton-Regular.ttf */; };
+		3F6222CF2304CE4D00CD311E /* BethEllen-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F6222CA2304CE4D00CD311E /* BethEllen-Regular.ttf */; };
 		3F8A8598230224F300531419 /* novaPessoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A8597230224F300531419 /* novaPessoa.swift */; };
 		3F8A859A2302251100531419 /* novaPessoaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A85992302251100531419 /* novaPessoaTableViewCell.swift */; };
 		3F8A859C2302254D00531419 /* novasPessoasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A859B2302254D00531419 /* novasPessoasTableViewController.swift */; };
@@ -29,6 +35,12 @@
 		3F40E8622304E0AF00543670 /* perfil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = perfil.swift; sourceTree = "<group>"; };
 		3F40E8642304E3A000543670 /* PerfilView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfilView.swift; sourceTree = "<group>"; };
 		3F51BF5823038D3B003C48B3 /* PerfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
+		3F6222C42304CBB400CD311E /* LibreCaslonDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "LibreCaslonDisplay-Regular.ttf"; path = "../../../Libre_Caslon_Display/LibreCaslonDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		3F6222C62304CE4D00CD311E /* IndieFlower-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "IndieFlower-Regular.ttf"; path = "../../../fonts/Indie_Flower/IndieFlower-Regular.ttf"; sourceTree = "<group>"; };
+		3F6222C72304CE4D00CD311E /* Lobster-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lobster-Regular.ttf"; path = "../../../fonts/Lobster/Lobster-Regular.ttf"; sourceTree = "<group>"; };
+		3F6222C82304CE4D00CD311E /* Satisfy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Satisfy-Regular.ttf"; path = "../../../fonts/Satisfy/Satisfy-Regular.ttf"; sourceTree = "<group>"; };
+		3F6222C92304CE4D00CD311E /* Anton-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Anton-Regular.ttf"; path = "../../../fonts/Anton/Anton-Regular.ttf"; sourceTree = "<group>"; };
+		3F6222CA2304CE4D00CD311E /* BethEllen-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BethEllen-Regular.ttf"; path = "../../../fonts/Beth_Ellen/BethEllen-Regular.ttf"; sourceTree = "<group>"; };
 		3F8A8597230224F300531419 /* novaPessoa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = novaPessoa.swift; sourceTree = "<group>"; };
 		3F8A85992302251100531419 /* novaPessoaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = novaPessoaTableViewCell.swift; sourceTree = "<group>"; };
 		3F8A859B2302254D00531419 /* novasPessoasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = novasPessoasTableViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +118,12 @@
 				3FAB950A22FCE2D100303EED /* View */,
 				3FAB94EF22FCD5C900303EED /* AppDelegate.swift */,
 				3FAB94F322FCD5C900303EED /* Main.storyboard */,
+				3F6222C62304CE4D00CD311E /* IndieFlower-Regular.ttf */,
+				3F6222C72304CE4D00CD311E /* Lobster-Regular.ttf */,
+				3F6222C82304CE4D00CD311E /* Satisfy-Regular.ttf */,
+				3F6222C92304CE4D00CD311E /* Anton-Regular.ttf */,
+				3F6222CA2304CE4D00CD311E /* BethEllen-Regular.ttf */,
+				3F6222C42304CBB400CD311E /* LibreCaslonDisplay-Regular.ttf */,
 				3FAB94F922FCD5C900303EED /* Assets.xcassets */,
 				3FAB94FB22FCD5C900303EED /* LaunchScreen.storyboard */,
 				3FAB94FE22FCD5C900303EED /* Info.plist */,
@@ -182,8 +200,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FAB94FD22FCD5C900303EED /* LaunchScreen.storyboard in Resources */,
+				3F6222CC2304CE4D00CD311E /* Lobster-Regular.ttf in Resources */,
+				3F6222CD2304CE4D00CD311E /* Satisfy-Regular.ttf in Resources */,
+				3F6222C52304CBB400CD311E /* LibreCaslonDisplay-Regular.ttf in Resources */,
+				3F6222CE2304CE4D00CD311E /* Anton-Regular.ttf in Resources */,
 				3FAB94FA22FCD5C900303EED /* Assets.xcassets in Resources */,
+				3F6222CF2304CE4D00CD311E /* BethEllen-Regular.ttf in Resources */,
 				3FAB94F522FCD5C900303EED /* Main.storyboard in Resources */,
+				3F6222CB2304CE4D00CD311E /* IndieFlower-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
