@@ -12,18 +12,29 @@ private let reuseIdentifier = "Cell"
 
 class CollectionViewController: UICollectionViewController {
     
+    var name: String?
+    var age: Int?
+    
     var interestsArray = ["Esportes", "Filmes", "Jogos", "Séries", "Animes", "Manga", "Culinária", "Computação", "Pedagogia", "Ciencia", "Terror", "Economia", "Política", "YouTube"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        let alertController = UIAlertController(title: "Bem-vindo, \((novoperfil?.name)!)", message: "Agora voce pode selecionar os seus interesses", preferredStyle: UIAlertControllerStyle.alert)
+        alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alertController, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,12 +43,18 @@ class CollectionViewController: UICollectionViewController {
     }
     
     func getRandomColor() -> UIColor {
-        //Generate between 0 to 1
-        let red:CGFloat = CGFloat(drand48())
-        let green:CGFloat = CGFloat(drand48())
-        let blue:CGFloat = CGFloat(drand48())
         
-        return UIColor(red:red, green: green, blue: blue, alpha: 1.0)
+        let color1 = UIColor(red: 162/255.0, green: 143/255.0, blue: 157/255.0, alpha: 1.0)
+        let color2 = UIColor(red: 176/255.0, green: 208/255.0, blue: 211/255.0, alpha: 1.0)
+        let color3 = UIColor(red: 116/255.0, green: 119/255.0, blue: 107/255.0, alpha: 1.0)
+        let color4 = UIColor(red: 247/255.0, green: 175/255.0, blue: 157/255.0, alpha: 1.0)
+        let color5 = UIColor(red: 211/255.0, green: 213/255.0, blue: 212/255.0, alpha: 1.0)
+        
+        let arrayColors = [color1, color2, color3, color4, color5]
+        
+        let position = Int(arc4random_uniform(5))
+        
+        return arrayColors[position]
     }
 
     /*
@@ -56,7 +73,6 @@ class CollectionViewController: UICollectionViewController {
         return 1
     }
 
-
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         return interestsArray.count
@@ -72,7 +88,8 @@ class CollectionViewController: UICollectionViewController {
         
         layout.minimumInteritemSpacing = 2
         
-        cell.backgroundColor = getRandomColor()
+        cell.backgroundColor! = getRandomColor()
+        //print(cell.backgroundColor!)
         
         //Bordas arredondadas
         cell.layer.masksToBounds = true
@@ -118,13 +135,13 @@ class CollectionViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        print(interestsArray[indexPath.row])
+        interesses.append(interestsArray[indexPath.row])
+        
+        print(interesses)
         
         self.interestsArray.remove(at: indexPath.row)
         self.collectionView?.deleteItems(at: [indexPath])
        
-        
-        
         
     }
  

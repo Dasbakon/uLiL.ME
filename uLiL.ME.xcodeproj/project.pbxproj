@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F40E8632304E0AF00543670 /* perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40E8622304E0AF00543670 /* perfil.swift */; };
+		3F40E8652304E3A000543670 /* PerfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F40E8642304E3A000543670 /* PerfilView.swift */; };
+		3F51BF5923038D3B003C48B3 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F51BF5823038D3B003C48B3 /* PerfilViewController.swift */; };
+		3F8A58B923062AD2007D326D /* LibreCaslonDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F8A58B823062AD2007D326D /* LibreCaslonDisplay-Regular.ttf */; };
+		3F8A58BB23062AEE007D326D /* Satisfy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F8A58BA23062AEE007D326D /* Satisfy-Regular.ttf */; };
+		3F8A8598230224F300531419 /* novaPessoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A8597230224F300531419 /* novaPessoa.swift */; };
+		3F8A859A2302251100531419 /* novaPessoaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A85992302251100531419 /* novaPessoaTableViewCell.swift */; };
+		3F8A859C2302254D00531419 /* novasPessoasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A859B2302254D00531419 /* novasPessoasTableViewController.swift */; };
+		3F8A859E2302391600531419 /* pessoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A859D2302391600531419 /* pessoa.swift */; };
+		3F8A85A023023A2100531419 /* pessoasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A859F23023A2100531419 /* pessoasTableViewController.swift */; };
+		3F8A85A223023A3500531419 /* pessoaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A85A123023A3500531419 /* pessoaTableViewCell.swift */; };
 		3FAB94F022FCD5C900303EED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB94EF22FCD5C900303EED /* AppDelegate.swift */; };
 		3FAB94F222FCD5C900303EED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB94F122FCD5C900303EED /* ViewController.swift */; };
 		3FAB94F522FCD5C900303EED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FAB94F322FCD5C900303EED /* Main.storyboard */; };
@@ -17,6 +28,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F40E8622304E0AF00543670 /* perfil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = perfil.swift; sourceTree = "<group>"; };
+		3F40E8642304E3A000543670 /* PerfilView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfilView.swift; sourceTree = "<group>"; };
+		3F51BF5823038D3B003C48B3 /* PerfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
+		3F8A58B823062AD2007D326D /* LibreCaslonDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "LibreCaslonDisplay-Regular.ttf"; path = "../../arquivos-drive/Libre_Caslon_Display/LibreCaslonDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		3F8A58BA23062AEE007D326D /* Satisfy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Satisfy-Regular.ttf"; path = "../../arquivos-drive/Satisfy/Satisfy-Regular.ttf"; sourceTree = "<group>"; };
+		3F8A8597230224F300531419 /* novaPessoa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = novaPessoa.swift; sourceTree = "<group>"; };
+		3F8A85992302251100531419 /* novaPessoaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = novaPessoaTableViewCell.swift; sourceTree = "<group>"; };
+		3F8A859B2302254D00531419 /* novasPessoasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = novasPessoasTableViewController.swift; sourceTree = "<group>"; };
+		3F8A859D2302391600531419 /* pessoa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pessoa.swift; sourceTree = "<group>"; };
+		3F8A859F23023A2100531419 /* pessoasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pessoasTableViewController.swift; sourceTree = "<group>"; };
+		3F8A85A123023A3500531419 /* pessoaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pessoaTableViewCell.swift; sourceTree = "<group>"; };
 		3FAB94EC22FCD5C900303EED /* uLiL.ME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uLiL.ME.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FAB94EF22FCD5C900303EED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FAB94F122FCD5C900303EED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,9 +61,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F8A8595230224AB00531419 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3FAB94F122FCD5C900303EED /* ViewController.swift */,
+				3FAB950822FCE0AF00303EED /* CollectionViewController.swift */,
+				3F8A85992302251100531419 /* novaPessoaTableViewCell.swift */,
+				3F8A859B2302254D00531419 /* novasPessoasTableViewController.swift */,
+				3F8A859F23023A2100531419 /* pessoasTableViewController.swift */,
+				3F8A85A123023A3500531419 /* pessoaTableViewCell.swift */,
+				3F51BF5823038D3B003C48B3 /* PerfilViewController.swift */,
+				3F40E8642304E3A000543670 /* PerfilView.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3F8A8596230224B900531419 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3F8A8597230224F300531419 /* novaPessoa.swift */,
+				3F8A859D2302391600531419 /* pessoa.swift */,
+				3F40E8622304E0AF00543670 /* perfil.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		3FAB94E322FCD5C900303EED = {
 			isa = PBXGroup;
 			children = (
+				3F8A58BA23062AEE007D326D /* Satisfy-Regular.ttf */,
+				3F8A58B823062AD2007D326D /* LibreCaslonDisplay-Regular.ttf */,
 				3FAB94EE22FCD5C900303EED /* uLiL.ME */,
 				3FAB94ED22FCD5C900303EED /* Products */,
 			);
@@ -58,6 +107,8 @@
 		3FAB94EE22FCD5C900303EED /* uLiL.ME */ = {
 			isa = PBXGroup;
 			children = (
+				3F8A8596230224B900531419 /* Model */,
+				3F8A8595230224AB00531419 /* Controller */,
 				3FAB950A22FCE2D100303EED /* View */,
 				3FAB94EF22FCD5C900303EED /* AppDelegate.swift */,
 				3FAB94F322FCD5C900303EED /* Main.storyboard */,
@@ -72,8 +123,6 @@
 		3FAB950A22FCE2D100303EED /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3FAB94F122FCD5C900303EED /* ViewController.swift */,
-				3FAB950822FCE0AF00303EED /* CollectionViewController.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -110,6 +159,7 @@
 				TargetAttributes = {
 					3FAB94EB22FCD5C900303EED = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 3D73JU7Q5W;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -138,6 +188,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FAB94FD22FCD5C900303EED /* LaunchScreen.storyboard in Resources */,
+				3F8A58B923062AD2007D326D /* LibreCaslonDisplay-Regular.ttf in Resources */,
+				3F8A58BB23062AEE007D326D /* Satisfy-Regular.ttf in Resources */,
 				3FAB94FA22FCD5C900303EED /* Assets.xcassets in Resources */,
 				3FAB94F522FCD5C900303EED /* Main.storyboard in Resources */,
 			);
@@ -150,10 +202,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F8A8598230224F300531419 /* novaPessoa.swift in Sources */,
 				3FAB950922FCE0AF00303EED /* CollectionViewController.swift in Sources */,
+				3F8A859E2302391600531419 /* pessoa.swift in Sources */,
+				3F40E8652304E3A000543670 /* PerfilView.swift in Sources */,
+				3F8A859A2302251100531419 /* novaPessoaTableViewCell.swift in Sources */,
+				3F40E8632304E0AF00543670 /* perfil.swift in Sources */,
 				3FAB94F822FCD5C900303EED /* uLiL_ME.xcdatamodeld in Sources */,
 				3FAB94F222FCD5C900303EED /* ViewController.swift in Sources */,
+				3F51BF5923038D3B003C48B3 /* PerfilViewController.swift in Sources */,
+				3F8A85A223023A3500531419 /* pessoaTableViewCell.swift in Sources */,
+				3F8A859C2302254D00531419 /* novasPessoasTableViewController.swift in Sources */,
 				3FAB94F022FCD5C900303EED /* AppDelegate.swift in Sources */,
+				3F8A85A023023A2100531419 /* pessoasTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,10 +339,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3D73JU7Q5W;
 				INFOPLIST_FILE = uLiL.ME/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hackatruck.uLiL-ME";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uLiL-ME";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -290,10 +355,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3D73JU7Q5W;
 				INFOPLIST_FILE = uLiL.ME/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hackatruck.uLiL-ME";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uLiL-ME";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -317,6 +386,7 @@
 				3FAB950322FCD5C900303EED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
