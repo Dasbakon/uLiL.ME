@@ -12,10 +12,18 @@ class PerfilView: UIViewController {
 
     @IBOutlet weak var nameAge: UILabel!
     
+    @IBOutlet weak var interestsLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         nameAge.text = "\((novoperfil?.name)!), \(String(describing: (novoperfil?.age)!))"
+        
+        interestsLabel.text! = "Interesses: "
+        
+        for interest in interesses {
+            interestsLabel.text! += "\(interest), "
+        }
     }
 
     override func didReceiveMemoryWarning() {
